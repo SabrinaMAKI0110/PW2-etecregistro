@@ -1,0 +1,125 @@
+/* Configurações universais */
+/* Todos os elementos sem margem e sem espaçamento */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Altura entre as linhas */
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    /* Cor do texto */
+    color: #333;
+}
+
+/* Estilo do CABEÇALHO */
+header {
+    background-color: #1e88e5;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+header  h1{
+    font-size: 2.5em;
+    letter-spacing: 1px ;
+}
+
+/*Menu de navegação*/
+nav {
+    background-color: #2f6eaa;
+    padding: 10px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    /* para que os elementos fiquem lado a lado ↓*/
+    display: inline;
+    /* ↓ 0 é a margem vertical e 15px é a margem horizontal */
+    margin: 15px;
+}
+/* "a" é o link href */
+nav ul li a {
+    color: white;
+    /* tira o sublinhado do link, ou seja, tir as decorações do link*/
+    text-decoration: none;
+    /*para não ter que colocar o negrito em cada um, então posso deixar em negrito no próprio css*/
+    font-weight: bold;
+}
+/*só vai exucutar quando ousuário trouxer o mouse em cima do elemento*/
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff8b2d;
+    /*transform: scale(1.2); ← aumenta de tamanho, mas como é link não aumenta*/
+}
+
+hr {
+    height: 1px;
+    background-color: #dddddd;
+    margin: 30px 0;
+    border: none;
+}
+
+/*Conteúdo principal (MAIN) */
+main {
+    padding: 20px;
+}
+
+/* Seção (SECTION) */
+
+section h2 {
+    font-size:  1.8em;
+    margin-bottom: 15px;
+    color: #1e88e5;
+}
+
+/*Artigos (ARTICLE)*/
+
+article {
+    background-color: white;
+    border-radius: 6px;
+    /*Espaçamento interno*/
+    padding: 15px;
+    /*margem inferior*/
+    margin-bottom: 15px;
+    /* borda só do lado esquerdo*/
+    border-left: 5px solid /*solid é um tipo e tem o dashed que é pontilhado */ #1e88e5;
+}
+
+article h3 {
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+article p {
+    color: #555555;
+}
+
+/*Anúncio (ASIDE)*/
+aside {
+    background-color: #fff3e0;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ffd180;
+    border-left: 5px solid #ffd180;
+}
+
+aside h3 {
+    margin-bottom: 10 px;
+    color: #ef6c00;
+}
+
+/*Rodapé (footer)*/
+footer {
+    background-color: #1e88e5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9;
+}
