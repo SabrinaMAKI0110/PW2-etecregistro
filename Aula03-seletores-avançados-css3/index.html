@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avançando no CSS3</title>
+
+    <!-- CSS External -> é escrito dentro do head (arquivo separado) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS Intenral -> é escrito dentro da tag head -->
+
+    <style>
+        /* A árvore DOM define a hierarquia dos elementos HTML */
+        header p {
+            color: chocolate;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- CSS Inline -> é esacrito dentro da tag -->
+        <h1 style="text-align: center; color: brown;">CSS Inline, Internal e External</h1>
+        <p>Esses são os 3 tipos de CSS</p>
+    </header>
+    <!-- 1em -> equivale a 16 pixels -->
+
+    <p id="texto">Este é outro parágrafo. Filho de body. Irmão de header.</p>
+
+    <P class="destaque">Este parágrafo possui uma classe chamada "destaque".</P>
+
+    <div class="box">
+        Passe o mouse aqui
+    </div>
+
+</body>
+
+</html>
