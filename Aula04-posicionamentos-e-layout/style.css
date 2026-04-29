@@ -1,0 +1,58 @@
+/*Seletor de CLASSE - elementos com position static não se movem*/
+.caixa {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: rgb(206, 206, 206);
+}
+
+.static {
+    position: static;
+    background-color: rgb(154, 238, 231);
+}
+
+.relative {
+    position: relative;
+    background-color: rgb(118, 230, 152);
+    top: 50px;
+    left: 200px;
+}
+
+.absolute {
+    position: absolute;
+    background-color: rgb(233, 104, 87);
+    margin: 0;
+    top: 150px;
+    left: 50px;
+    z-index: 3;
+}
+
+.frente {
+    z-index: 2;
+    left: 60px;
+    top: 170px;
+    background-color: rgb(200, 144, 236);
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(245, 236, 106);
+    z-index: 1000;
+}
+
+.espaco {
+    height: 900px;
+    background-color: antiquewhite;
+}
+
+.sticky {
+    position: sticky;
+     /* quando chegar no marco 0, top 0, ele fixa, gruda */
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(136, 127, 86);
+    color: white;
+}
