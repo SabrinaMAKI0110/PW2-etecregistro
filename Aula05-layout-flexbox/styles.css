@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    height: 250px;
+    padding: 20px;
+    background-color: #30302e;
+}
+/* o padrão que vem é block */
+.card{
+    background-color: #8cc9e4;
+    padding: 20px;
+    margin: 5px;
+    color: #30302e;
+    font-weight: bold;
+}
+.linha-ao-centro{
+    flex-direction: row;
+    /* Eixo horizontal */
+    justify-content: center;
+    /* Eixo vertical */
+    align-items: center;
+}
+/* uma div pode ter infinitas classes */
+.coluna-a-esquerda{
+    flex-direction: column;
+    /* Eixo horizontal */
+    align-items: flex-start;
+    /* Eixo vertical */
+    justify-content: center;
+}
+.linha-espacada{
+    /* flex em linha, felx-direction em row */
+    flex-direction: row;
+    /* coloca espaço enter os elementos */
+    justify-content: space-between; 
+    align-items: center;
+}
+.quebra-linha{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* Quebra de linha */
+    flex-wrap: wrap;
+}
+.card-grande{
+    width: 100px;
+}
