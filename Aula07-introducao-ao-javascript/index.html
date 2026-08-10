@@ -18,29 +18,48 @@
 <!-- JAVASCRIPT -->
 <script>
     //Dispare uma janela de ALERTA
-    window.alert('Bem-vindo ao meu primeiro site com Javascript!')
+    window.alert('Bem-vindo ao meu primeiro site com Javascript!');
 
     // No JS, é manipulado a árvore DOM, que começa com o pai WINDOW,
     // vai para filho DOCUMENT(site) que possui o html, head, body, etc
 
-    //Dispara uyma janea de CONFIRMAÇÃO
-    window.confirm('Vamos começar a aprender sobre variáveis?')
+    //Dispara uma janela de CONFIRMAÇÃO
+    window.confirm('Vamos começar a aprender sobre variáveis?');
 
     //Armazenando o nome do usuário em uma variável
-    const nome = window.prompt('Qual é o seu nome?')
+    const nome = window.prompt('Qual é o seu nome?');
     //prompt -> abre uma janela de inserção de dados 
 
     //Escrevendo no site
-    document.write('Olá ' + nome + '! Vamos aprender sobre variáveis!')
+    //CONCATENAÇÃO (COMUM)
+    // document.write('Olá ' + nome + '! Vamos aprender sobre variáveis!');
+
+    //CONCATENAÇÃO (TEMPLATE STRINGS)
+    document.write(`Olá, ${nome}! Vamos começar! <br>`);
 
     // Quebra linha  -->  document.write('<br>')
-   
-    document.write('<br>')
 
-    let idade = window.prompt('Qual é a sua idade?')
-    document.write('Atualmente, sua idade é ' + idade + ' anos!')
+    let idade = window.prompt('Qual é a sua idade?');
+
+    //CONCATENAÇÃO (COMUM)
+    // document.write('Atualmente, sua idade é ' + idade + ' anos!');
+
+    //CONCATENAÇÃO (TEMPLATE STRINGS)
+    document.write(`Atualmente sua idade é ${idade} anos! <br>`);
 
     // o var subscreve o valor da variável, já o let não permite que a variável seja sobrescrita (se você tem um valor importante o var pode acabar apagando)
+    // 'Olá ' + nome +   <----- isso é concatenar
+
+    // Conversão de Dados
+    const n1 = Number(window.prompt('Digite um número'));
+    const n2 = Number(window.prompt('Digite outro número'));
+    
+    const resultado = n1 + n2;
+    document.write(`A soma de ${n1} + ${n2} é igual a: ${resultado} <br>`);
+
+    // quando você quer converter um valor, você usa o "Number(n1)" e Number(resultado)
+    // se fosse letras, usava-se o "String(n1)" e String(resultado)
+    // Ex.: const resultado = Number(n1) + Number(n2); ou você converte o valor no prompt ou no lugar que realizará a conta
 
 </script>
 
