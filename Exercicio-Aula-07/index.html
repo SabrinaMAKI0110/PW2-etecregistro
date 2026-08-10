@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Aula 07</title>
+    <style>
+        body{
+            background-color: #97e2dc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício Aula 07</h1>
+</body>
+<script>
+    /* Solicite dois números ao usuário e retorne as
+    4 operações básicas (soma, subtração, multiplicação e divisão)
+    Como resultado na página
+    • ----------
+    • ----------
+    • ----------
+    */
+
+    window.alert('Seja Bem-Vindo, vamos realizar algumas operações matemáticas!');
+
+    const num1 = Number(window.prompt('Digite um número:'));
+    const num2 = Number(window.prompt('Digite o segundo número:'));
+
+    const soma = num1 + num2;
+    const subtracao = num1 - num2;
+    const mult = num1 * num2;
+    const div = num1 / num2;
+
+    document.write(`O resultado da SOMA do número ${num1} + ${num2} é: ${soma} <br>`);
+    document.write(`O resultado da SUBTRAÇÃO do número ${num1} - ${num2} é: ${subtracao} <br>`);
+    document.write(`O resultado da MULTIPLICAÇÃO do número ${num1} * ${num2} é: ${mult} <br>`);
+    document.write(`O resultado da DIVISÃO do número ${num1} / ${num2} é: ${div} <br>`);
+
+</script>
+</html>
