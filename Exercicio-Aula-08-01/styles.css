@@ -1,0 +1,48 @@
+/*CSS*/
+
+body{
+    background-color: aliceblue;
+    color: rgb(48, 65, 79);
+    font-family: Arial;
+    padding: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+div#Vermelho{
+    border-radius: 50%;
+    background-color: rgb(54, 54, 54);
+    width: 210px;
+    height: 210px;
+    margin-top: 25px;
+}
+
+div#Amarelo{
+    border-radius: 50%;
+    background-color: rgb(54, 54, 54);
+    width: 210px;
+    height: 210px;
+}
+
+div#Verde{
+    border-radius: 50%;
+    background-color: rgb(54, 54, 54);
+    width: 210px;
+    height: 210px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
