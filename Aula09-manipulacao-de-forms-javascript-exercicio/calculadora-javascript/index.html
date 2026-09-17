@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importação do CSS -->
+    <link rel="stylesheet" href="styles.css">
+
     <title>Manipulação de Formulários com Javascript - Exercício</title>
 </head>
 <body>
     <h1>Calculadora JavaScript</h1>
+
+    Insira dois números:
+    <input type="number" name="Num1" id="Num1" min="0" max="9999">
+    <input type="number" name="Num2" id="Num2" min="0" max="9999">
+
+    <button type="button" onclick="Somar()">+</button>
+    <button type="button" onclick="Subtrair()">-</button>
+    <button type="button" onclick="Multiplicar()">*</button>
+    <button type="button" onclick="Dividir()">/</button>
+
+    <div id="resultado">Resultado:</div>
+
+    <button type = "button" onclick = "limpar()">Limpar</button>
+
+    <!-- Importação do JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
 

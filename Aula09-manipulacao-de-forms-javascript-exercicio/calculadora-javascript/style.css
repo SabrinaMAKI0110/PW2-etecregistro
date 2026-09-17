@@ -1,5 +1,12 @@
 /* CSS */
 
 body{
-    background-color: ;
+    background-color: rgb(201, 252, 252);
+    font: normal 18pt Arial;
 }
+
+input{
+    width: 65px;
+    font: normal 18pt Verdana;
+}
+
