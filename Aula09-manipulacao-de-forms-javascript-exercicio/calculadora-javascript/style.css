@@ -5,7 +5,7 @@ body{
     font: normal 18pt Arial;
     text-align: center;
     padding: 10px;
-    background-image: url("/Aula09-manipulacao-de-forms-javascript-exercicio/snup_novo.png");
+    background-image: url("snup_novo.png");
     background-size: 100% 110%;
     background-position: left center;
     background-repeat: no-repeat;
