@@ -6,7 +6,18 @@ body{
 }
 
 input{
-    width: 65px;
+    width: 50px;
     font: normal 18pt Verdana;
 }
 
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(190, 154, 236);
+    border: none;
+}
+
+div#resultado{
+    background-color: rgb(243, 248, 148);
+}
