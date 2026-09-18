@@ -3,11 +3,26 @@
 body{
     background-color: rgb(201, 252, 252);
     font: normal 18pt Arial;
+    text-align: center;
+    padding: 10px;
+    background-image: url("/Aula09-manipulacao-de-forms-javascript-exercicio/snup_novo.png");
+    background-size: 100% 110%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    margin-bottom: 35px;
 }
 
 input{
-    width: 50px;
+    width: 115px;
+    height: 60px;
     font: normal 18pt Verdana;
+    font-size: 30px;
+    padding-left: 10px;
+    border: 3px solid rgb(54, 90, 167);
 }
 
 button{
@@ -16,8 +31,45 @@ button{
     border-radius: 50%;
     background-color: rgb(190, 154, 236);
     border: none;
+    font-size: 40px;
+    margin-bottom: 15px;
+    box-shadow: 1.5px 1.5px 1px rgba(141, 112, 178, 1);
+}
+
+p{
+    margin-bottom: 15px;
 }
 
 div#resultado{
-    background-color: rgb(243, 248, 148);
+    background-color: rgb(237, 240, 176);
+    width: 200px;
+    height: 65px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#Limpar{
+    font-size: 22px;
+    width: 130px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: rgb(233, 107, 107);
+    margin-top: 35px;
+}
+
+div#calculadora{
+    width: 600px;
+    min-height: 650px;
+    background-color: rgb(161, 194, 221);
+    border-radius: 35px;
+    padding: 25px;
+    margin: auto;
+    border: 3px solid rgb(54, 90, 167);
+    box-shadow: 2px 2px 8px rgb(104, 100, 109);
 }

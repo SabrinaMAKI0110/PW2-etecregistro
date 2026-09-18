@@ -10,16 +10,17 @@
     <title>Manipulação de Formulários com Javascript - Exercício</title>
 </head>
 <body>
+    <div id="calculadora">
     <h1>Calculadora JavaScript</h1>
 
     Insira dois números:
     <br><br>
     <input type="number" name="Num1" id="Num1" min="0" max="9999">
+    e
     <input type="number" name="Num2" id="Num2" min="0" max="9999">
     <br><br>
 
-    Selecione a o peração:
-    <br><br>
+    <p>Selecione a operação:</p>
     <button type="button" onclick="Somar()">+</button>
     <button type="button" onclick="Subtrair()">-</button>
     <button type="button" onclick="Multiplicar()">*</button>
@@ -27,12 +28,11 @@
     <br><br>
 
     Resultado:
-    <br><br>
     <div id="resultado"></div>
-    <br><br>
 
-    <button type = "button" onclick = "limpar()">Limpar</button>
-
+    <button type="button" onclick="limpar()" id="Limpar">Limpar</button>
+    </div>
+    
     <!-- Importação do JavaScript -->
     <script src="script.js"></script>
 </body>
