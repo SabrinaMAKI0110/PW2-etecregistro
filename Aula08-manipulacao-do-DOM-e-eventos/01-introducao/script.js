@@ -9,7 +9,7 @@ const titulo = window.document.getElementsByTagName('h1')[0]
 titulo.innerText = "Fui alterado pelo Javascript =("
 
 // toda vez que eu quiser mudar algo em relação ao estilo do elemento, coloco o 
-// nome do elemento,ponto, style, ponto, o colo, abckground, etc
+// nome do elemento,ponto, style, ponto, o color, background, etc
 
 titulo.style.color = 'yellow'
 

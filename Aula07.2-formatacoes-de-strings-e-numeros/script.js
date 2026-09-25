@@ -34,7 +34,6 @@ document.write(`Seu salário em euro é: ${salario.toLocaleString('pt-br', {styl
 // dólar português pt-br -> US$
 // dólar inglês en -> $
 
-
 // R$ 1000,00
 //const salarioD=salario*cotação em dólar(0.19)
 // = 200
