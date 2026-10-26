@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+    <!-- data-br padrão, o theme acessa uma função que muda o tema, isso é colocado na tag do html -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechNova Solutions - Exemplo Bootstrap</title>
+
+    <!-- nome do link que pega os links de importação do bootstrap = Bootstrap CDN (continuous delivery network)-->
+    <!-- Importação do CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- para confirmar se o bootstrap funcionou, percebe-se
+    através da fonte e da margem do texto que ele modifica -->
+
+    <!-- bootstrap tem uma paleta de cor padrão, composto 
+    por azul, vermelho, amarelo, cinza, ciano, verde 
+
+    blue -> primary
+    gray -> secondary
+    yellow -> warning
+    red -> danger
+    green -> success
+    cyan -> info
+    -->
+
+    <!-- nome do elemento, traço, nome da cor por exemplo -->
+
+    <!-- mt-4 = margin top 4 rem 
+         mb-2 = margin bottom 
+         pt/pb = padding top/padding bottom
+    -->
+
+    <!-- Container -->
+    <div class="container">
+        <header class="text-center mb-5 position-relative">
+
+        <!-- Botão Switch (Canto superior direito) -->
+        <div class="form-check form-switch position-absolute top-0 end-0 mt-2">
+           <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" checked>
+           <label class="form-check-label" for="themeSwitch">Modo Escuro</label>
+        </div>
+
+            <h1 class="text-primary mt-4 mb-4">TechNova Solutions</h1>
+            <p>Soluções tecnológicas modernas com apoio do Bootstrap</p>
+        </header>
+
+     <!-- Seção de Cards -->
+      <!-- card 01 -->
+     <section class="row mb-4">
+        <div class="col-12 col-md-4 col-md-3">
+            <!-- h-100 = 100% de altura (height) /  w-100 = 100% de largura (width)-->
+            <div class="card h-100 w-100">
+                <div class="card-body">
+                    <h5 class="card-title">Desenvolvimento Web</h5>
+                    <p class="card-text">Criação de sites e sistema web responsivos com bootstrap.</p>
+                    <!-- Imagem -->
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Desenvolvimento Web" class="img-thumbnail">
+                    <!-- img-thumbnail = faz a imagem se adaptar a largura e altura do elemento pai -->
+                     <button class="btn btn-primary mt-3">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+        <!-- card 02 -->
+         <div class="col-12 col-md-4 col-md-3">
+            <!-- h-100 = 100% de altura (height) /  w-100 = 100% de largura (width)-->
+            <div class="card h-100 w-100">
+                <div class="card-body">
+                    <h5 class="card-title">Consultoria Web</h5>
+                    <p class="card-text">Orientação estratégica para soluções digitais.</p>
+                    <!-- Imagem -->
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Consultoria" class="img-thumbnail">
+                    <!-- img-thumbnail = faz a imagem se adaptar a largura e altura do elemento pai -->
+                     <button class="btn btn-primary mt-3">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+        <!-- card 03 -->
+         <div class="col-12 col-md-4 col-md-3">
+            <!-- h-100 = 100% de altura (height) /  w-100 = 100% de largura (width)-->
+            <div class="card h-100 w-100">
+                <div class="card-body">
+                    <h5 class="card-title">Soluções Digitais</h5>
+                    <p class="card-text">Projetos personalizados para diferentes necessidades.</p>
+                    <!-- Imagem -->
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Soluções digitais" class="img-thumbnail">
+                    <!-- img-thumbnail = faz a imagem se adaptar a largura e altura do elemento pai -->
+                     <button class="btn btn-primary mt-3">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- ALERTA DISPENSÁVEL com bootstrap -->
+
+     <!-- fade = oculta o elemento -->
+     <!-- data-bs-dismiss = "fecha" o elemento colocando o nome da classe que deve fechar -->
+     <!-- for = pode digitar o que quiser -->
+     <div class="alert alert-warning alert-dismissible fade show text-center mb-5">
+        Atenção: Esta página é um exemplo didático utilizando Bootstrap.
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+     </div>
+
+     <!-- FORMULÁRIO com Bootstrap -->
+      <section class="mb-5 ">
+        <h3 class="mb-3 border-bottom pb-2">Entre em contato conosco!</h3>
+        <form>
+            <!-- form-label = label
+                 form-control = input 
+            -->
+            <!-- Campo NOME -->
+            <div class="mb-3">
+                <label for="nomeInput" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="nomeInput" placeholder="Digite seu nome">
+            </div>
+            <!-- Campo EMAIL -->
+            <div class="mb-3">
+                <label for="emailInput" class="form-label">E-mail</label>
+                <input type="text" class="form-control" id="emailInput" placeholder="Digite seu e-mail">
+            </div>
+            <!-- Campo MENSAGEM -->
+            <div class="mb-3">
+                <label for="msgText" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="msgText" placeholder="Como podemos ajudar?" rows="3"></textarea>
+            </div>
+            <!-- BOTÃO de ENVIAR -->
+             <!-- data-bs-toggle (precisa estar ligado ao target) = faz aparecer o elemento mas precisa do data-bs-target (alvo) para indicar o nome do modal -->
+             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmModal">Enviar Mensagem</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- o que escrever no "for" e "id" devem ser a mesma coisa -->
+
+    <!-- modal é uma janela que aparece em cima das coisas, -->
+
+    <!-- MODAL FLUTUANTE  -->
+     <div class="modal fade" id="confirmModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmar Envio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Deseja realmente enviar esta mensagem para a equipe da TechNova Solutions?
+                </div>
+                <div class="modal-footer">
+                    <!-- BOTÃO DE REVISAR -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Revisar</button>
+                    <!-- BOTÃO DE CONFIRMAR ENVIO -->
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Sim, enviar</button>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- o bootstrap já vem configurado padrão em 12 colunas,
+     mobile first sempre prioriza um layout já para celular
+
+     md-4 vem de medium, tela media, mobile(celular) 
+     é colocado col-12, mas no desktop precisa colocar o col-md-12
+
+      ——————    ——————    —————— 
+     |      |  |      |  |      |
+     |  4   |  |  4   |  |  4   |     mobile
+     |      |  |      |  |      |
+      ——————    ——————    —————— 
+
+      ——————————————
+     |              |
+     |      12      |     desktop
+     |              |
+      ——————————————
+
+     -->
+
+   
+
+    <!-- Importação do Javascript do Bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+     <script>
+
+        //  Script para alternar o tema
+        const themeSwitch = document.getElementById("themeSwitch");
+        const htmlElement = document.documentElement; // Pega a tag <html>
+
+        themeSwitch.addEventListener("change", function () {
+          if (this.checked) {
+            htmlElement.setAttribute("data-bs-theme", "dark");
+            this.nextElementSibling.textContent = "Modo Escuro";
+          } else {
+            htmlElement.setAttribute("data-bs-theme", "light");
+            this.nextElementSibling.textContent = "Modo Claro";
+          }
+        });
+
+     </script>
+
+
+<!-- iremos ver na aula 26/10/2026
+  •navbar
+  •carrossel
+  •tabela 
+
+-->
+</body>
+</html>
